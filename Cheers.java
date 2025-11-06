@@ -23,7 +23,7 @@ public class Cheers {
 
         System.out.println("What does that spell?");
         while (count > 0 ){
-                System.out.println(name + "! ! !");
+                System.out.println(name + "!!!");
 
                 count--;
         }
