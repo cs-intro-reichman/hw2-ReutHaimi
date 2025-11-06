@@ -4,6 +4,7 @@ public  class  TestRandom {
 	int numberOfTimes = Integer.parseInt(args[0]);
 	int smallAmount = 0;
 	int bigAmount = 0;
+
 	while(numberOfTimes > 0){
 		double randomNumber = Math.random();
 		if (randomNumber > 0.5){
@@ -14,11 +15,11 @@ public  class  TestRandom {
 		numberOfTimes = numberOfTimes - 1;
 	}
 	if (bigAmount == 0){
-		System.out.println("> 0.5: " + bigAmount);
-		System.out.println("<= 0.5: " + smallAmount);
+		System.out.println("> 0.5: " + bigAmount + " times");
+		System.out.println("<= 0.5: " + smallAmount + " times");
 	} else {
-		System.out.println("> 0.5: " + bigAmount);
-		System.out.println("<= 0.5: " + smallAmount);
+		System.out.println("> 0.5: " + bigAmount + " times");
+		System.out.println("<= 0.5: " + smallAmount + " times");
 		System.out.println("Ratio: " + (double)smallAmount / bigAmount);
 		}
 	}
