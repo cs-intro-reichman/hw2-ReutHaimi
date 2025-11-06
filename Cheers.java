@@ -15,7 +15,7 @@ public class Cheers {
 
         while (i < name.length()){
                 if(anLtters.indexOf(name.charAt(i)) != -1){
-                          System.out.println("Give me an  " + name.charAt(i) + ": " + name.charAt(i) + "!");
+                          System.out.println("Give me an " + name.charAt(i) + ": " + name.charAt(i) + "!");
                 } else
                         System.out.println("Give me a  " + name.charAt(i) + ": " + name.charAt(i) + "!");
           i += 1;
