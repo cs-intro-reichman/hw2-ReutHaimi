@@ -12,12 +12,12 @@ public class Cheers {
         int count = Integer.parseInt(args[1]);
         String anLtters = ("AEFHILMNORSX");
        int i = 0;
-       
+
         while (i < name.length()){
                 if(anLtters.indexOf(name.charAt(i)) != -1){
-                          System.out.println("give me an " + name.charAt(i) + ": " + name.charAt(i) + "!");
+                          System.out.println("Give me an " + name.charAt(i) + ": " + name.charAt(i) + "!");
                 } else
-                        System.out.println("give me a " + name.charAt(i) + ": " + name.charAt(i) + "!");
+                        System.out.println("Give me a " + name.charAt(i) + ": " + name.charAt(i) + "!");
           i += 1;
         }
 
