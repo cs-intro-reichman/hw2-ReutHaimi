@@ -33,5 +33,8 @@ public class Collatz {
 	}
 }
 	System.out.println("Every one of the first " + Iterations + " hailstone sequences reached 1.");
+
+
 }
+
 }
