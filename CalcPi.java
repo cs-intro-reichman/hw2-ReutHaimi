@@ -11,7 +11,7 @@ public class CalcPi {
 		} else { 
 			sum = sum + (1 / nextNumber);
 		} 
-		System.out.println(sum);
+		
 		isPositive = !isPositive;
 		nextNumber += 2;
 		index --;
