@@ -28,7 +28,9 @@ public class Collatz {
 		counter ++;
 	}
 		System.out.println("(" + counter + ")");
-		System.out.println("");
+		if (nextNumber != 1){
+			System.out.println("");
+		}
 		i++;
 	}
 }
