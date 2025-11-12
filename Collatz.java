@@ -5,18 +5,19 @@ public class Collatz {
 	int i = 1;
 	int nextNumber = 0;
 	int seed = 1;
-	boolean isGood = false;
+
 
 	if (args[1].equals("v")){
+
+	//Calculating all operations per row
 	while (i <= Iterations){
 		seed = i;
 		nextNumber = seed;
 		int counter = 1;
 		System.out.print(seed + " ");
-		if (seed == 1){
-			isGood = true;
-		}
-		while (nextNumber != 1 || isGood == true) {
+
+		// The first iteration is on 1 and the rest are where the term is different from 1.
+		do { 
 		if (nextNumber % 2 == 0){
 			nextNumber = nextNumber /2; 
 		}
@@ -24,9 +25,12 @@ public class Collatz {
 			nextNumber = (nextNumber * 3) + 1;
 		}
 		System.out.print(nextNumber + " ");
-		isGood = false;
+
 		counter ++;
-	}
+	} while (nextNumber != 1);
+
+
+	// printing the amount of numbers
 		System.out.println("(" + counter + ")");
 		if (nextNumber != 1){
 			System.out.println("");
